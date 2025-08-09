@@ -100,8 +100,12 @@ var WildRydes = window.WildRydes || {};
         });
     }
 
-    function toUsername(email) {
+    /*function toUsername(email) {
         return email.replace('@', '-at-');
+    }*/
+
+    function toUsername(email) {
+        return email; // Use email directly as username
     }
 
     /*
@@ -171,3 +175,4 @@ var WildRydes = window.WildRydes || {};
         );
     }
 }(jQuery));
+
